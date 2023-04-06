@@ -1,4 +1,4 @@
-# Desafio da Lição 02-04
+# 🎯 Desafio 02_04
 
 ## Objetivo
 
