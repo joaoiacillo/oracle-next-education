@@ -6,3 +6,4 @@ Reintroduzir todos os tópicos básicos abordados sobre uma estrutura HTML simpl
 
 ## Resumo
 
+Este capítulo foi uma boa introdução ao HTML, JavaScript e toda a questão de desenvolvimento web. Acredito que mais sobre lógica de programação estará por vir e vamo que vamo!
