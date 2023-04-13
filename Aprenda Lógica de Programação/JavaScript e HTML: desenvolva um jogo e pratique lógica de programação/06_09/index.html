@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+<body>
+<script>
+	function writeTag(tag, content) {
+		var el = document.createElement(tag);
+		el.innerText = content;
+		document.body.append(el);
+	}		
+
+	function promptInt(text) {
+		return parseInt(prompt(text));
+	}
+
+	function getRandomNumber(max) {
+		return Math.round(Math.random() * max)
+	}
+
+	var lives = 5;
+	var max = 10;
+	var points = 0;
+	var lastChances = 3;
+
+	alert("Bem vindo ao meu jogo!\n\nA regra é simples: escolherei um número aleatório entre o intervalo dito. Seu trabalho é adivinhar que número é esse.\n\nVocê tem 5 vidas. Boa sorte!");
+
+	while (true) {
+		var chosenNumber = getRandomNumber(max);
+
+
+		var chances = lastChances;
+		var win = false;
+
+		function getChoosePromptText() {
+			var pointsText = points + " pontos";
+			var livesText = lives + " de 5 vidas";
+			var rangeText = "Escolha um número de 0 a " + max;
+			var chancesText = "(" + chances + " de " + lastChances +  " chances)";
+
+			return "(" + livesText + "; " + pointsText + ")" + "\n\n" +
+				   chancesText + " " + rangeText + ":";
+		}
+
+		while (chances > 0) {
+			var userNumber = promptInt(getChoosePromptText());
+			if (isNaN(userNumber)) {
+				alert("Erro inesperado. Tente denovo.");
+				continue;
+			}
+
+			chances -= 1;
+
+			if (userNumber > chosenNumber) {
+				alert("Menor que " + userNumber);
+			} else if (userNumber < chosenNumber) {
+				alert("Maior que " + userNumber);
+			} else { // userNumber == chosenNumber
+				win = true;
+				break;
+			}
+		}
+
+		if (!win) {
+			alert("Poxa, você não adivinhou o número. Tente de novo :(");
+		} else {
+			var winnedPoints = getRandomNumber(max) + 5;
+			alert("Parabens! Você ganhou " + winnedPoints + " pontos!");
+			points += winnedPoints;
+			max += getRandomNumber(5) + 2;
+			lastChances += 2;
+		}
+	}
+</script>
+</body>
