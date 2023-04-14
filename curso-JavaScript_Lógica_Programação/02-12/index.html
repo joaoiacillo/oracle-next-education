@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<h1>Álcool ou Gasolina</h1>
+
+<script>
+    var qttMaximaTanque = 40; // litros
+
+    var dstcMaximaGasolina = 480; // km
+    var dstcMaximaAlcool = 300; // km
+
+    document.write("Em um tanque com capacidade máxima de " + 40 + " litros, podemos rodar: ");
+
+    var tituloGasolina = "<strong>gasolina</strong>";
+    var tituloAlcool = "<strong>álcool</strong>";
+
+    document.write("<ul>");
+    document.write("<li>" + dstcMaximaGasolina + "km com " + tituloGasolina + ";</li>");
+    document.write("<li>" + dstcMaximaAlcool + "km com " + tituloAlcool + ".</li>");
+    document.write("</ul>");
+
+    var consumoGasolina = Math.round(dstcMaximaGasolina / qttMaximaTanque);
+    var consumoAlcool = Math.round(dstcMaximaAlcool / qttMaximaTanque);
+
+    document.write("Quanto ao consumo de cada uma, com:")
+
+    document.write("<ul>");
+    document.write("<li>" + tituloGasolina + " consumimos aproximadamente " + consumoGasolina + " km/L;</li>");
+    document.write("<li>" + tituloAlcool + " consumimos aproximadamente " + consumoAlcool + " km/L.</li>");
+    document.write("</ul>");
+</script>
