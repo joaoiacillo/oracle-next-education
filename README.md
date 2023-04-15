@@ -1,6 +1,6 @@
-# Oracle ONE - @joaoiacillo
+# Oracle Next Education
 
-Este repositório contêm todos os meus projetos desenvolvidos para o programa Oracle ONE.
+Este repositório contêm todos os meus projetos desenvolvidos para o programa Oracle Next Education.
 
 ![Logo Oracle Next Education](https://guiadeti.com.br/wp-content/uploads/2022/06/guia-cursos-one.png)
 
