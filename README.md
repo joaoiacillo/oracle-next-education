@@ -2,7 +2,7 @@
 
 Este repositório contêm todos os meus projetos desenvolvidos para o programa Oracle Next Education.
 
-![Logo Oracle Next Education](https://guiadeti.com.br/wp-content/uploads/2022/06/guia-cursos-one.png)
+![Logo Oracle Next Education](https://cdn2.gnarususercontent.com.br/1/1221562/bed9485c-901b-45d4-9b4a-f67b8e682463.png)
 
 ## Sobre o Autor
 
