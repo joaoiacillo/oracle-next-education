@@ -1,0 +1,35 @@
+<meta charset="utf-8" />
+
+<canvas width="600" height="340"></canvas>
+
+<script>
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const gridColor = "gray";
+    const gridSize = 26;
+
+    const maxGridRows = canvas.height / gridSize;
+
+    function drawGridSquare(x, y) {
+        ctx.strokeStyle = gridColor;
+        ctx.lineWidth = 1;
+        ctx.strokeRect(x + 1, y + 1, gridSize, gridSize);
+    }
+
+    function drawGridRow(rowIndex) {
+        let yPos = rowIndex * gridSize;
+        for (let xPos = 0; xPos < canvas.width; xPos += gridSize) {
+            drawGridSquare(xPos, yPos);
+        }
+        console.log("Row " + rowIndex + " was drew to the canvas.");
+    }
+
+    function drawGrid() {
+        for (let row = 0; row < maxGridRows; row++) {
+            drawGridRow(row);
+        }
+    }
+
+    drawGrid();
+</script>
