@@ -1,6 +1,6 @@
 # Oracle Next Education
 
-Este repositório contêm todos os meus projetos desenvolvidos para o programa Oracle Next Education.
+Este repositório contêm alguns dos meus projetos desenvolvidos para os cursos do programa Oracle Next Education.
 
 ![Logo Oracle Next Education](https://cdn2.gnarususercontent.com.br/1/1221562/bed9485c-901b-45d4-9b4a-f67b8e682463.png)
 
