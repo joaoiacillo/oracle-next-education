@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(text) {
+        document.write(text);
+        pulaLinha();
+    }
+
+    function separador() {
+        mostra("<hr>");
+    }
+
+    function big(text) {
+        mostra("<big>" + text + "</big>");
+    }
+
+    const primeiroAnoCopa = 1930;
+
+    var anoCopa = primeiroAnoCopa;
+
+    var currentYear = new Date().getFullYear();
+
+    while (anoCopa < currentYear) {
+        mostra("Teve copa em: " + anoCopa);
+        anoCopa += 4;
+    }
+
+    separador();
+
+    big("A próxima copa será no ano de: " + anoCopa);
+</script>

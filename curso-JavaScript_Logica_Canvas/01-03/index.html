@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = "green";
+    ctx.fillRect(0, 0, 200, 400);
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(600, 0, -200, 400)
+</script>

@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	const canvas = document.querySelector('canvas');
+	const ctx = canvas.getContext('2d');
+
+	function randomInt(max) {
+		return Math.round(Math.random() * max);
+	}
+
+	function drawCircle(x, y) {
+		ctx.fillStyle = `rgb(
+			${randomInt(255)},
+			${randomInt(255)},
+			${randomInt(225)}
+		)`;
+
+		ctx.beginPath();
+		ctx.arc(x, y, 10, 0, 2 * 3.14);
+		ctx.fill();
+	}
+
+	function handleCanvasClickEvent(event) {
+		const x = event.offsetX;
+		const y = event.offsetY;
+
+		drawCircle(x, y);
+
+		console.log(`The user clicked on: (X=${x}, Y=${y})`);
+	}
+
+	ctx.fillStyle = 'gray';
+	ctx.fillRect(0, 0, 600, 400);
+
+	canvas.onclick = handleCanvasClickEvent;
+</script>
