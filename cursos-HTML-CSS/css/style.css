@@ -1,0 +1,64 @@
+/* || Common || */
+
+body.gray {
+    background: #cccccc;
+}
+
+/* || Text || */
+
+.text-center {
+    text-align: center;
+}
+
+/* || Container || */
+
+.container {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* || Header || */
+
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/* || Footer || */
+
+footer {
+    padding: 40px 0;
+    background-image: url(../imgs/bg.jpg);
+    text-align: center;
+}
+
+.copyright {
+    margin: 20px 0 0;
+    color: white;
+    font-size: 13px;
+}

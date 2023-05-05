@@ -1,6 +1,4 @@
-body {
-    background: #cccccc;
-}
+/* || Common || */
 
 p {
     text-align: center;
@@ -10,40 +8,60 @@ em strong {
     color: #ff0000;
 }
 
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
+/* || Banner || */
 
 #banner {
     width: 100%;
+}
+
+/* || Main Section || */
+
+main {
+    background: #cccccc;
+    padding: 80px 0;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main p {
+    margin: 1.2% 0;
+    line-height: 1.3rem;
 }
 
 #mission {
     font-size: 20px;
 }
 
+/* || Benefits || */
+
 #benefits {
     background: white;
-    padding: 20px;
+    padding: 30px 15rem;
 }
 
-#main-section {
-    background: #cccccc;
-    padding: 30px;
-}
-
-.main-heading {
-    padding-left: 20px;
-}
-
-.text-center {
+#benefits h3 {
+    margin: 0 0 30px 0;
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#benefits ul {
+    width: 28%;
+    margin-right: 15%;
+    padding: 10px 0 0 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    list-style-type: disc;
 }
 
 .itens {
+    margin: 3% 0;
     font-style: italic;
 }
 

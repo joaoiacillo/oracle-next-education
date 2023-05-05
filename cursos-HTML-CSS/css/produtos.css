@@ -1,38 +1,3 @@
-header {
-    background: #bbb;
-    padding: 20px 0;
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-nav li {
-    display: inline;
-    margin-left: 15px;
-}
-
-nav a {
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-}
-
-.container {
-    position: relative;
-    max-width: 940px;
-    margin: 0 auto;
-}
-
 .products {
     padding: 50px 0;
 }
@@ -80,16 +45,4 @@ nav a:hover {
     margin: 10px 0 0;
     font-size: 22px;
     font-weight: bold;
-}
-
-footer {
-    padding: 40px 0;
-    background-image: url(../imgs/bg.jpg);
-    text-align: center;
-}
-
-.copyright {
-    margin: 20px 0 0;
-    color: white;
-    font-size: 13px;
 }
