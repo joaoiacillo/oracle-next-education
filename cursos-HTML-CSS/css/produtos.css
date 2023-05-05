@@ -81,3 +81,15 @@ nav a:hover {
     font-size: 22px;
     font-weight: bold;
 }
+
+footer {
+    padding: 40px 0;
+    background-image: url(../imgs/bg.jpg);
+    text-align: center;
+}
+
+.copyright {
+    margin: 20px 0 0;
+    color: white;
+    font-size: 13px;
+}
