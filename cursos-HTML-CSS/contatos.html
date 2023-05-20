@@ -34,6 +34,7 @@
                     name="full-name"
                     class="input-padrao"
                     id="full-name"
+                    required
                 />
 
                 <label for="email">Email</label>
@@ -42,14 +43,16 @@
                     name="email"
                     class="input-padrao"
                     id="email"
+                    required
                 />
 
                 <label for="phone">Telefone</label>
                 <input
-                    type="text"
+                    type="tel"
                     name="phone"
                     class="input-padrao"
                     id="phone"
+                    required
                 />
 
                 <label for="message">Mensagem</label>
@@ -59,13 +62,14 @@
                     class="input-padrao"
                     cols="70"
                     rows="10"
+                    required
                 ></textarea>
 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
 
                     <label>
-                        <input type="radio" name="type" value="email" />
+                        <input type="radio" name="type" value="email" checked />
                         Email
                     </label>
 
@@ -78,16 +82,16 @@
                         <input type="radio" name="type" value="whatsapp" />
                         WhatsApp
                     </label>
-                </div>
+                </fieldset>
 
-                <div>
+                <fieldset>
                     <p>Qual horário prefere ser atendido?</p>
-                    <select>
+                    <select required>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
 
                 <label>
                     <input type="checkbox" />
@@ -99,7 +103,10 @@
         </main>
 
         <footer>
-            <img src="imgs/logo-branco.png" alt="" />
+            <img
+                src="imgs/logo-branco.png"
+                alt="logo branca da barbearia alura"
+            />
             <p class="copyright">Copyright &copy; Barbearia Alura - 2019</p>
         </footer>
     </body>
