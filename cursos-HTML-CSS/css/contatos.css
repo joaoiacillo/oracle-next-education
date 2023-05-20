@@ -20,6 +20,27 @@ form legend {
     margin: 20px 0;
 }
 
-main fieldset {
+form fieldset {
     margin: 30px 0;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.send {
+    width: 40%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s background, 0.2s transform;
+    cursor: pointer;
+}
+.send:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
 }
