@@ -1,5 +1,9 @@
 /* || Common || */
 
+body {
+    background: linear-gradient(180deg, white 50%, black);
+}
+
 em {
     font-style: italic;
 }
@@ -17,7 +21,7 @@ em strong {
 /* || About Section || */
 
 .about {
-    padding: 80px 0;
+    padding: 80px 25px;
 }
 
 .about .utensils {
@@ -45,7 +49,9 @@ em strong {
 
 .map {
     margin: 0 0 50px;
+    padding: 0 25px;
     text-align: center;
+    clear: left;
 }
 
 .map h3 {
@@ -65,8 +71,11 @@ em strong {
 /* || Benefits || */
 
 #benefits {
-    background: white;
-    padding: 30px 0;
+    padding: 30px 25px;
+}
+
+#benefits div {
+    display: flex;
 }
 
 #benefits h3 {
@@ -76,13 +85,19 @@ em strong {
 }
 
 #benefits ul {
-    width: 28%;
+    width: 30%;
     margin-right: 15%;
     padding: 10px 0 0 50px;
-    display: inline-block;
-    vertical-align: top;
+    flex: 1;
     font-size: 20px;
-    list-style-type: disc;
+    list-style-type: none;
+}
+
+#benefits li::before {
+    content: "⭐";
+    font-size: 14px;
+    font-style: normal;
+    margin: 0 5px 0 0;
 }
 
 .itens {
@@ -91,11 +106,39 @@ em strong {
 }
 
 .benefits-img {
-    width: 50%;
+    width: 100%;
+    flex: 1.5;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 30%);
 }
 
 #video {
     display: block;
     width: 560px;
     margin: 50px auto;
+}
+
+/* || Responsive || */
+
+@media screen and (max-width: 555px) {
+    main {
+        text-align: center;
+    }
+
+    .about .utensils {
+        float: none;
+    }
+
+    #benefits div {
+        display: block;
+    }
+
+    #benefits ul {
+        width: fit-content;
+        margin: 15px auto;
+        padding: 0;
+    }
+
+    #video {
+        width: 100%;
+    }
 }

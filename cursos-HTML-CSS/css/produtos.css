@@ -1,12 +1,14 @@
 .products {
     padding: 50px 0;
+    text-align: center;
 }
 
 .products li {
-    width: 30%;
-    margin: 0 1.5%;
-    padding: 30px 20px;
     display: inline-block;
+    width: 30%;
+    min-height: 400px;
+    margin: 15px 1.5%;
+    padding: 30px 20px;
     vertical-align: top;
     /* background-color: #ccc; */
     border: solid 2px black;
@@ -45,4 +47,12 @@
     margin: 10px 0 0;
     font-size: 22px;
     font-weight: bold;
+}
+
+/* || Responsive || */
+
+@media screen and (max-width: 555px) {
+    .products li {
+        width: 60%;
+    }
 }
